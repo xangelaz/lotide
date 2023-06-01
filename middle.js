@@ -14,29 +14,23 @@ const assertArraysEqual = function(array1, array2) {
 };
 
 const middle = function(array) {
-  let newArray = [];
-  let i = Math.ceil(array.length / 2 - 1)
   if (array.length < 3) {
-    console.log(newArray)
-  } else {
-    if (array.length % 2 === 0) {
-    newArray.push(array[i]);
-    newArray.push(array[i + 1]);
+    return []
+  } 
+  let i = Math.ceil(array.length / 2 - 1)
+  if (array.length % 2 === 0) {
+    return [array[i], array[i + 1]]
   }
-  else if (array.length % 2 !== 0) {
-    newArray.push(array[i]);
-  }
-  console.log(newArray);
-}
+  return [array[i]];
 }
 
-middle([1]) // => []
-middle([1, 2]) // => []
-middle([1, 2, 3]) // => [2]
-middle([1, 2, 3, 4, 5]) // => [3]
-middle([1, 2, 3, 4]) // => [2, 3]
-middle([1, 2, 3, 4, 5, 6]) // => [3, 4]
-// new test below 
-middle([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13])
-middle([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16])
-middle([3, 6, 9])
+console.log(middle([1])) // => [])
+console.log(middle([1, 2])) // => [])
+console.log(middle([1, 2, 3])) // => [2])
+console.log(middle([1, 2, 3, 4, 5])) // => [3])
+console.log(middle([1, 2, 3, 4])) // => [2, 3])
+console.log(middle([1, 2, 3, 4, 5, 6])) // => [3, 4])
+//console.log(// new test below )
+console.log(middle([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]))
+console.log(middle([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]))
+console.log(middle([3, 6, 9]))
