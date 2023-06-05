@@ -1,6 +1,9 @@
 const letterPositions = function(sentence) {
   const results = {};
   for (let i = 0; i < sentence.length; i++) {
+    if (sentence[i] === " ") {
+      continue 
+    }
     if (results[sentence[i]] === undefined) {
     results[sentence[i]] = [];
   }
@@ -8,15 +11,8 @@ const letterPositions = function(sentence) {
   }
   return results
 };
-//console.log(letterPositions("hello"));
+//console.log(letterPositions("lighthouse in the house"));
 
-
-/* i think the output will be something like:
-h: 0
-e: 1
-l: 2, 3
-o: 4
-*/
 
 const eqArrays = function(array1, array2) {
   if (array1.length !== array2.length) {
@@ -40,6 +36,6 @@ const assertArraysEqual = function(array1, array2) {
   console.log(`✅✅✅ Assertion Passed: ${array1} === ${array2}`);
 };
 
-const sentence = "hello"
+const sentence = "lighthouse in the house"
 
 assertArraysEqual(letterPositions("hello").h, [0]);
