@@ -14,12 +14,12 @@ const letterPositions = function(sentence) {
 console.log(letterPositions("lighthouse in the house"));
 
 
-const r = { l: 0 }
-for (let key in r) {
-  console.log(r[key])
-}
-console.log()
-console.log()
+// const r = { l: 0 }
+// for (let key in r) {
+//   console.log(r[key])
+// }
+// console.log()
+// console.log()
 
 const eqArrays = function(array1, array2) {
   if (array1.length !== array2.length) {
