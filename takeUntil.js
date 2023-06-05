@@ -1,23 +1,11 @@
-const letterPositions = function(sentence) {
-  const results = {};
-  for (let i = 0; i < sentence.length; i++) {
-    if (results[sentence[i]] === undefined) {
-    results[sentence[i]] = [];
-  }
-    results[sentence[i]].push(i);
-  }
-  return results
-};
-//console.log(letterPositions("hello"));
+const takeUntil = function(array, callback) {
+  // ...
+}
 
 
-/* i think the output will be something like:
-h: 0
-e: 1
-l: 2, 3
-o: 4
-*/
 
+
+// test code below 
 const eqArrays = function(array1, array2) {
   if (array1.length !== array2.length) {
     return false
@@ -40,6 +28,6 @@ const assertArraysEqual = function(array1, array2) {
   console.log(`✅✅✅ Assertion Passed: ${array1} === ${array2}`);
 };
 
-const sentence = "hello"
-
-assertArraysEqual(letterPositions("hello").h, [0]);
+assertArraysEqual(map(words, word => word[0]), [ 'g', 'c', 't', 'm', 't' ])
+assertArraysEqual(map(words, word => word[1]), [ 'r', 'o', 'o', 'a', 'o' ])
+assertArraysEqual(map(words, word => word[2]), [ 'o', 'n', undefined, 'j', 'm' ])
