@@ -21,18 +21,21 @@ const assertArraysEqual = function(array1, array2) {
 };
 
 const without = function(fullArray, removeArray) {
-  let newArray = []
-  for (let full of fullArray) {
+  let newArray = [];
+  for (let element of fullArray) {
+    let toAdd = true;
     for (let remove of removeArray) {
-      if (fullArray[full] !== removeArray[remove]) {
-        newArray = newArray.push(fullArray[full])
+      if (element === remove) {
+        toAdd = false;
       }
+    }
+    if (toAdd) {
+      newArray.push(element);
     }
   }
   console.log(fullArray)
   console.log(newArray)
 }
-// ok so, i think what i need to do is get the function to identify 
 
 
 // without([1, 2, 3], [1]) // => [2, 3]
