@@ -13,7 +13,7 @@ const findKey = function(object, callback) {
     }
   }
   return undefined;
-}
+};
 
 
 // console.log(findKey({
@@ -32,10 +32,10 @@ const things = {
   "elBulli":   { stars: 3 },
   "Ora":       { stars: 2 },
   "Akelarre":  { stars: 3 },
-}
+};
 const callback = x => x.stars === 2;
 
-//test cases 
+//test cases
 assertEqual(findKey(things, callback), "noma");
 assertEqual(findKey(things, callback), "notnoma");
 
