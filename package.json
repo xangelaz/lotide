@@ -1,5 +1,5 @@
 {
-  "name": "@xangelax/lotide",
+  "name": "@xangelaz/lotide",
   "version": "1.0.0",
   "description": "Functions that return parts of an array",
   "main": "assertArraysEqual.js",
