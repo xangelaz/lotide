@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@xangelax/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "Functions that return parts of an array",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/xangelaz/lotide.git"
   },
-  "author": "",
+  "author": "Angela Zhou",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/xangelaz/lotide/issues"
