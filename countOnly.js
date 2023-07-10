@@ -14,9 +14,8 @@ const countOnly = function(allItems, itemsToCount) {
       results[item] += 1;
     } else {
       results[item] = 1;
+      }
     }
-  }
-    console.log(item);
   }
   return results;
 }
